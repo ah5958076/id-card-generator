@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Design</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card front">
+        <div class="company-info">
+            <img src="./assets/logo.png" width="50px" alt="logo" />
+          <div>
+            <h2>HEALTHWIRE</h2>
+            <p>Aapki sehat, hamari tarjeeh</p>
+          </div>
+        </div>
+
+        <div class="user-image">
+          <div>
+            <input type="file" name="user-photo"/>
+            <img src="./assets/logo.png" alt="user image" />
+          </div>
+        </div>
+
+        <div class="name-role">
+          <h3 contenteditable="true">Muhammad Amir Hamza</h3>
+          <p contenteditable="true">Software Engineer</p>
+        </div>
+
+        <div class="user-info">
+          <div class="info">
+            <span>User ID</span>
+            <span>:</span>
+            <span id="userID" contenteditable="true">HW-1640</span>
+          </div>
+          <div class="info">
+            <span>Blood Group</span>
+            <span>:</span>
+            <span contenteditable="true">B+</span>
+          </div>
+          <div class="info">
+            <span>Contact #</span>
+            <span>:</span>
+            <span contenteditable="true">0349-9019007</span>
+          </div>
+        </div>
+
+        <div class="footer"><!-- Nothing here --></div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card back">
+
+        <div class="company-info">
+          <img src="./assets/logo.png" width="50px" alt="logo" />
+          <div>
+            <h2>HEALTHWIRE</h2>
+            <p>Aapki sehat, hamari tarjeeh</p>
+          </div>
+        </div>
+
+        <div class="core-values">
+          <h2>CORE VALUES</h2>
+          <div class="values">
+            <div class="value">
+              <img src="./assets/customer_need.png" alt="...">
+              <p>Obsess Over Customer Needs</p>
+            </div>
+            <div class="value">
+              <img src="./assets/act_like_owner.png" alt="...">
+              <p>Act Like Owners</p>
+            </div>
+            <div class="value">
+              <img src="./assets/speed_habit.png" alt="...">
+              <p>Speed as a Habit</p>
+            </div>
+            <div class="value">
+              <img src="./assets/empower_win.png" alt="...">
+              <p>Empower & Win</p>
+            </div>
+            <div class="value">
+              <img src="./assets/ambitious_goals.png" alt="...">
+              <p>Set Ambitios Goals</p>
+            </div>
+            <p class="description">
+              Healthwire culture is obsessed with prioritizing customer- centric standards. Our values are driven on transparent, blunt, respectful, open and well-defined processes. We strongly believe that improving our user journey will subsequently refine our product. Everyone at Healthwire believes in 'people, products and profits in the same order', as a reminder of the value they bring to our users.
+            </p>
+          </div>
+          <svg id="barcode"></svg>
+        </div>
+        <div class="footer"></div>
+      </div>
+
+      <button class="barcode-generate" onclick="generateBarcode()">Generate Barcode</button>
+    </div>
+
+    <script src="./assets//JsBarcode.all.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
